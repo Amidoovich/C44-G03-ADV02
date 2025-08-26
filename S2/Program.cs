@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.ObjectModel;
+using System.Text.Json.Nodes;
 
 namespace S2
 {
@@ -306,7 +307,46 @@ namespace S2
 
             #endregion
 
+            #region Linked List
 
+            //LinkedList<int> linkedList = new LinkedList<int>();
+            //LinkedListNode<int> FirstNode = linkedList.AddFirst(10);
+            //LinkedListNode<int> SecondNode = linkedList.AddFirst(20);
+            //LinkedListNode<int> Node = new LinkedListNode<int>(30);
+            //linkedList.AddFirst(Node);
+
+            //// prev  | Data | Next
+            //// Ref() |  10  | Ref()
+
+            ////foreach(int item in linkedList)
+            ////    Console.WriteLine(item);
+
+            //LinkedListNode<int> Node02 = new LinkedListNode<int>(100);
+
+            //linkedList.AddAfter(SecondNode,Node02);
+
+            //foreach (int item in linkedList)
+            //    Console.WriteLine(item);
+
+            //Console.WriteLine(linkedList.Count());
+
+            //LinkedListNode<int>? FNode = linkedList?.First;
+            //LinkedListNode<int>? LNode = linkedList?.Last;
+
+            ////Console.WriteLine(FNode?.Value);
+            ////Console.WriteLine(FNode?.ValueRef);
+
+            ////LinkedListNode<int>? PrevNode = FNode?.Previous;
+            ////Console.WriteLine(PrevNode.Value);
+
+            //LinkedList<int>? NewList = Node.List;
+
+            //foreach (int item in NewList)
+            //    Console.WriteLine(item);
+
+
+
+            #endregion
         }
     }
 }
