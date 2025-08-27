@@ -347,6 +347,45 @@ namespace S2
 
 
             #endregion
+
+            #region Stack
+
+            Stack<int> stack = new Stack<int>();
+
+            Console.WriteLine($"{stack.Capacity} , {stack.Count}"); // 0 , 0
+
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            stack.Push(4);
+
+            //Console.WriteLine($"{stack.Capacity} , {stack.Count}"); // 4 , 4
+
+            stack.Push(5);
+
+            //Console.WriteLine($"{stack.Capacity} , {stack.Count}"); // 8 , 5
+
+            foreach (int i in stack)
+                Console.WriteLine(i);
+            Console.WriteLine("//////////////////////////");
+
+            //int top = stack.Pop();
+            //top = stack.Pop();
+            //top = stack.Pop();
+            //top = stack.Pop();
+            //top = stack.Pop(); // InvalidOpeerationException
+
+            stack.TryPop(out int top);
+            Console.WriteLine(top);
+
+            Console.WriteLine("//////////////////////////");
+
+
+
+            foreach (int i in stack)
+                Console.WriteLine(i);
+
+            #endregion
         }
     }
 }
